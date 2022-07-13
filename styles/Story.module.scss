@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: url("/images/hero.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10vh 0 5vh 0;
+    box-sizing: border-box;
+
+}
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: url("/images/hero.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10vh 0 5vh 0;
+        box-sizing: border-box;
+margin: 5rem;
+    }
+
+}

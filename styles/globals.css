@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+  
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,500;1,300&display=swap');
+
 html,
 body {
   padding: 0;
@@ -22,7 +26,7 @@ a {
   line-height: 90px;
 }
 .mali{
-  font-family: 'mali';
+  font-family: 'Mali', cursive,Oxygen;
 }
 .swiper {
   width: 600px;

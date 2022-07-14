@@ -3,7 +3,7 @@
 @tailwind utilities;
 
   
-@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,700;1,300&display=swap');
 
 html,
 body {
@@ -26,7 +26,7 @@ a {
   line-height: 90px;
 }
 .mali{
-  font-family: 'Mali', cursive,Oxygen;
+  font-family: 'Mali';
 }
 .swiper {
   width: 600px;

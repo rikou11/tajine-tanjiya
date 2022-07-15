@@ -47,7 +47,7 @@ const Hero = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6 }}
-                  className="  lg:text-xl py-5 px-12 text-yellow-400 rounded-lg  bg-green-700 hover:bg-green-800  transition-all duration-300"
+                  className="  lg:text-xl py-5 px-12 text-yellow-400 rounded-[60px]  bg-green-700 hover:bg-green-800  transition-all duration-300"
                 >
                   View Menu
                 </motion.button>

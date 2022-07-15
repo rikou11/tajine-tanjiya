@@ -2,7 +2,7 @@ import styles from "../../styles/Home.module.scss";
 
 const OurStory = () => {
   return (
-    <div className={styles.hero}>
+    <div className={styles.section}>
       <div className="px-2 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-4  ">
         <h1 className="text-center text-4xl text-green-700 lg:text-8xl font-bold my-4 mali mb-10">
           Our Story

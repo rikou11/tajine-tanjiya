@@ -1,5 +1,6 @@
 import { testmonials } from "./Content/Testmonial";
-import styles from "../../styles/Home.module.scss";
+import styles from "../../styles/Slider.module.scss";
+import hero from "../../styles/Home.module.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,7 +17,7 @@ var settings = {
   className: "slider variable-width",
 
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 2000,
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -56,7 +57,7 @@ var settings = {
 };
 const Testmonials = () => {
   return (
-    <div className={styles.hero}>
+    <div className={hero.hero}>
       <h1 className="text-center text-4xl text-green-700 lg:text-6xl font-bold my-4 mali mb-10">
         Testemonials
       </h1>

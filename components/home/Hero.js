@@ -19,11 +19,13 @@ var settings = {
   prevArrow: <PrevArrow />,
 };
 const images = [
-  { img: "/images/plat1.png", demention: 500 },
-  { img: "/images/plat2.svg", demention: 500 },
-  { img: "/images/plat3.svg", demention: 500 },
-  { img: "/images/plat4.png", demention: 500 },
-  { img: "/images/plat5.png", demention: 500 },
+  { img: "/images/plate1.svg", demention: 500 },
+  { img: "/images/plate2.svg", demention: 500 },
+
+  { img: "/images/plate3.svg", demention: 500 },
+
+  { img: "/images/plate4.svg", demention: 500 },
+  { img: "/images/plate5.svg", demention: 500 },  
 ];
 const Hero = () => {
   return (

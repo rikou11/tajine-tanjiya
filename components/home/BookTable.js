@@ -30,7 +30,7 @@ const BookTable = () => {
               </div>
             </div>
             {/* plat */}
-            <Image src="/images/group 9.png" alt="" width={700} height={700} />
+            <Image src="/images/Group 11 1.svg" alt="" width={700} height={700} />
           </div>
         </div>
       </div>

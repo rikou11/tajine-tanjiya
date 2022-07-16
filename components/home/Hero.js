@@ -39,16 +39,16 @@ const Hero = () => {
                         animate={{ opacity: 1 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration:  0.8 ,ease: "easeOut"}}
-                className=" text-5xl lg:text-7xl font-bold mali "
+                className=" text-6xl lg:text-8xl font-bold mali "
               >
                 Taste Now Our Special{" "}
                 <span className="text-green-700 ">Marocain Dishes</span>{" "}
               </motion.h1>
 
-              <div className="flex  mt-8">
+              <div className="flex justify-center lg:justify-start  mt-8">
                 <button
               
-                  className="  lg:text-xl shadow-lg shadow-[#D6FDE9] py-5 px-12 text-yellow-400 rounded-[60px]  bg-green-700 hover:bg-green-800  transition-all duration-300"
+                  className="  lg:text-xl shadow-lg shadow-[#D6FDE9] py-3 px-10 text-yellow-400 rounded-[60px]  bg-green-700 hover:bg-green-800  transition-all duration-300"
                 >
                   View Menu
                 </button>

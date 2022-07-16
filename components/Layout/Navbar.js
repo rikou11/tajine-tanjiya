@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
       
 
-            <nav className="relative flex flex-wrap items-center justify-between  bg-green-800  shadow-2xl  px-2   ">
+            <nav className="relative flex flex-wrap items-center justify-between  bg-green-800  shadow-xl  px-2   ">
                 <div className="container px-4 mx-2 md:mx-32 flex flex-wrap items-center justify-between">
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <Link href='/'><div className=" cursor-pointer rounded-full flex justify-center"><Image alt="Tajine and Tanjiya" src="/logo.svg" className="relative " width={100} height={100} />

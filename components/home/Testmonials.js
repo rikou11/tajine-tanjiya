@@ -10,6 +10,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 var settings = {
   dots: true,
@@ -61,7 +62,26 @@ const Testmonials = () => {
       <h1 className="text-center text-4xl text-green-700 lg:text-6xl font-bold my-4 mali mb-10">
         Testemonials
       </h1>
-
+      <div className="flex justify-center mb-10">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="113.8"
+          height="6.933"
+          viewBox="0 0 113.8 6.933"
+        >
+          <path
+            id="Path_6"
+            data-name="Path 6"
+            d="M4,8H115.8M4,12.933H115.8"
+            transform="translate(-3 -7)"
+            fill="none"
+            stroke="#1e5509"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+          />
+        </svg>
+      </div>
       <Slider {...settings} className={styles.Slider}>
         {testmonials.map((i) => {
           return (
@@ -69,7 +89,15 @@ const Testmonials = () => {
               <div
                 className={`${styles.card} flex-col py-2 px-4 h-full  md:py-4 md:px-8 shadow-lg rounded-lg bg-white `}
               >
-                <h1 className="font-bold text-lg">{i.name}</h1>
+                <div className="flex align-middle items-center">
+                  <Image
+                    src="/images/shadow.svg"
+                    alt=""
+                    width={50}
+                    height={50}
+                  />
+                  <h1 className="font-bold text-lg">{i.name}</h1>
+                </div>
                 <h2 className="text-slate-700 font-thin text-sm">{i.date}</h2>
                 <h3 className="flex ">
                   <svg

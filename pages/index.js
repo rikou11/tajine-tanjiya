@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import BookTable from '../components/home/BookTable'
 import Hero from '../components/home/Hero'
 import OurStory from '../components/home/OurStory'
 import Story from '../components/home/Story'
@@ -21,8 +22,9 @@ export default function Home() {
 <OurStory/>
 
 
-<Testmonials/>
 
+<Testmonials/>
+<BookTable/>
 <Story/>
   </div>
 

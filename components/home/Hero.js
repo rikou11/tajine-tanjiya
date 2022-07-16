@@ -13,7 +13,7 @@ var settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay:false,
+  autoplay:true,
   autoplaySpeed: 3000,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
@@ -40,7 +40,7 @@ const Hero = () => {
                 transition={{ duration: 0.3 }}
                 className=" text-5xl lg:text-7xl font-bold mali "
               >
-                Order Now Our Special{" "}
+                Taste Now Our Special{" "}
                 <span className="text-green-700 ">Marocain Dishes</span>{" "}
               </motion.h1>
 

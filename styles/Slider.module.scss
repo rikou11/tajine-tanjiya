@@ -1,87 +1,148 @@
 
-@media screen and (min-width: 768px) {
-    .Slider {
-      width: 40%;
-      margin: 0 auto;
+@media screen and(min-width:1024px) {
+  .Slider {
+    width: 90%;
+    margin: 0 auto;
   
-    }
-    .cardSlider {
-      position: relative;
-      max-width: 95%;
-      padding : 20px 0;
-      // height: calc(100% - 10px);
-      // border: 1px solid #e0e0e0;
-    }
-    .card {
-       
-      height: 100%;
-      padding : 20px ;
-    }
-  
-    .slickArrowIconRight,
-    .slickArrowIconLeft {
-      position: absolute;
-      display: block;
-      cursor: pointer;
+    height: 100%
+  }
+  .cardSlider {
+    
+    padding: 20px 30px;
+    height: 600px;
+ 
+  }
+  .card {
+
+    padding: 20px;
+  }
+
+  .slickArrowIconRight,
+  .slickArrowIconLeft {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    color: rgb(1, 122, 17);
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    transition: 0.5s ease-in-out;
+    &:hover,
+    &:focus {
+      outline: none;
       background: transparent;
       color: rgb(1, 122, 17);
-      top: 50%;
-      -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
-      padding: 0;
-      border: none;
-      outline: none;
-      transition: 0.5s ease-in-out;
-      &:hover,
-      &:focus {
-        outline: none;
-        background: transparent;
-        color: rgb(1, 122, 17);
-        font-size: 40px;
-        &::before {
-          opacity: 1;
-        }
+      font-size: 40px;
+      &::before {
+        opacity: 1;
       }
     }
-  
-    .slickArrowIconLeft {
-      left: -30px;
-      [dir="rtl"] & {
-        left: auto;
-        right: -30px;
-      }
-    }
-  
-    .slickArrowIconRight {
+  }
+
+  .slickArrowIconLeft {
+    left: -30px;
+    [dir="rtl"] & {
+      left: auto;
       right: -30px;
-      [dir="rtl"] & {
-        left: -30px;
-        right: auto;
+    }
+  }
+
+  .slickArrowIconRight {
+    right: -30px;
+    [dir="rtl"] & {
+      left: -30px;
+      right: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Slider {
+    width: 90%;
+    margin: 0 auto;
+  
+    height: 100%
+  }
+  .cardSlider {
+    
+    padding: 20px 30px;
+    height: 270px;
+ 
+  }
+  .card {
+
+    padding: 20px;
+  }
+
+  .slickArrowIconRight,
+  .slickArrowIconLeft {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    color: rgb(1, 122, 17);
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    transition: 0.5s ease-in-out;
+    &:hover,
+    &:focus {
+      outline: none;
+      background: transparent;
+      color: rgb(1, 122, 17);
+      font-size: 40px;
+      &::before {
+        opacity: 1;
       }
     }
   }
-  @media screen and (max-width: 760px) {
-    .Slider {
-      max-width: 80%;
-      margin: 0 auto;
-    }
-    .cardSlider {
-    
-      position: relative;
-      max-width: 90%;
-      padding : 20px 0;
-    }
-    .card {
-      display: flex;
-      justify-content: center;
-      height: 100%;
-      padding : 20px ;
-    }
-  
-    .slickArrowIconRight,
-    .slickArrowIconLeft {
-      display: none;
+
+  .slickArrowIconLeft {
+    left: -30px;
+    [dir="rtl"] & {
+      left: auto;
+      right: -30px;
     }
   }
+
+  .slickArrowIconRight {
+    right: -30px;
+    [dir="rtl"] & {
+      left: -30px;
+      right: auto;
+    }
+  }
+}
+@media screen and (max-width: 760px) {
+  .Slider {
+    width: 90%;
+    margin: 0 auto;
   
+    height: 100%
+  }
+  .cardSlider {
+    padding: 20px 30px;
+    height: 250px;
+  }
+  .card {
+    position: relative;
+
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .slickArrowIconRight,
+  .slickArrowIconLeft {
+    display: none;
+  }
+}

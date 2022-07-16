@@ -1,13 +1,26 @@
+import { motion } from "framer-motion";
 import styles from "../../styles/Home.module.scss";
 
 const OurStory = () => {
   return (
     <div className={styles.section}>
       <div className="px-2 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-4  ">
-        <h1 className="text-center text-4xl text-green-700 lg:text-8xl font-bold my-4 mali mb-10">
+        <motion.h1
+          initial={{ opacity: 0, y: -15 }}
+          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-center text-4xl text-green-700 lg:text-8xl font-bold my-4 mali mb-10"
+        >
           Our Story
-        </h1>
-        <div className="flex justify-center mb-10">
+        </motion.h1>
+        <motion.div
+          initial={{ opacity: 0, x: -15 }}
+          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex justify-center mb-10"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="113.8"
@@ -26,10 +39,15 @@ const OurStory = () => {
               strokeWidth="2"
             />
           </svg>
-        </div>
+        </motion.div>
 
-        <grid className="grid grid-cols-1 mx-4 lg:grid-cols-2 text-green-900 text-left text-base lg:text-xl gap-10">
-          <p>
+        <motion.div className="grid grid-cols-1 mx-4 lg:grid-cols-2 text-green-900 text-left text-base lg:text-xl gap-10">
+          <motion.p
+            initial={{ opacity: 0, x: -40 }}
+            animate={{ opacity: 1 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
             officiis ut tenetur ea dicta. Illum nisi iusto id dolorem aspernatur
             voluptatum unde. Ab velit asperiores architecto accusantium ipsam,
@@ -43,8 +61,13 @@ const OurStory = () => {
             error. Facere aperiam enim animi eaque assumenda pariatur provident
             veniam aut sed, repudiandae omnis? Explicabo aliquam adipisci
             exercitationem cumque quos ea ipsum!
-          </p>
-          <p>
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, x: -40 }}
+            animate={{ opacity: 1 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
             officiis ut tenetur ea dicta. Illum nisi iusto id dolorem aspernatur
             voluptatum unde. Ab velit asperiores architecto accusantium ipsam,
@@ -58,8 +81,8 @@ const OurStory = () => {
             provident veniam aut sed, repudiandae omnis? Explicabo aliquam
             adipisci exercitationem cumque quos ea ipsum! voluptatum unde. Ab
             velit asperiores architecto accusantium ipsam, !
-          </p>
-        </grid>
+          </motion.p>
+        </motion.div>
       </div>
     </div>
   );

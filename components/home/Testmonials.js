@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 
 import {
   faChevronLeft,
@@ -58,10 +59,16 @@ var settings = {
 };
 const Testmonials = () => {
   return (
-    <div className={hero.hero}>
-      <h1 className="text-center text-4xl text-green-700 lg:text-6xl font-bold my-4 mali mb-10">
+    <div className={hero.testmonial}>
+      <motion.h1
+        initial={{ opacity: 0, y: -15 }}
+        animate={{ opacity: 1 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="text-center text-4xl text-green-700 lg:text-6xl font-bold my-4 mali mb-10"
+      >
         Testemonials
-      </h1>
+      </motion.h1>
       <div className="flex justify-center mb-10">
         <svg
           xmlns="http://www.w3.org/2000/svg"

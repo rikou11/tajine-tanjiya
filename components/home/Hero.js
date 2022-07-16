@@ -13,19 +13,19 @@ var settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay:false,
   autoplaySpeed: 3000,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
 };
 const images = [
-  { img: "/images/plate1.svg", demention: 500 },
-  { img: "/images/plate2.svg", demention: 500 },
+  { img: "/plate/1.png", demention: 500 },
+  { img: "/plate/2.png", demention: 500 },
 
-  { img: "/images/plate3.svg", demention: 500 },
+  { img: "/plate/3.png", demention: 500 },
 
-  { img: "/images/plate4.svg", demention: 500 },
-  { img: "/images/plate5.svg", demention: 500 },  
+  { img: "/plate/4.png", demention: 500 },
+  { img: "/plate/5.png", demention: 500 },  
 ];
 const Hero = () => {
   return (

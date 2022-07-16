@@ -23,7 +23,7 @@ const BookTable = () => {
                 Voluptatem, eveniet fugiat iusto numquam dolore exercitationem
                 quis labore deserunt.
               </p>
-              <div className="flex justify-start">
+              <div className="flex justify-center lg:justify-start">
                 <button className="bg-green-800 text-yellow-300 hover:bg-green-700 hover:text-yellow-400 rounded-lg px-12 py-5 transition-all duration-300">
                   Reserve now
                 </button>

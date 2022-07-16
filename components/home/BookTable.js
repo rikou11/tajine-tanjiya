@@ -26,7 +26,7 @@ const BookTable = () => {
                 animate={{ opacity: 1 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.9 }}
-                className="text-slate-600 text-left lg:text-center text-lg"
+                className="text-slate-600 text-center lg:text-left text-lg px-4 lg:px-8"
               >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatem, eveniet fugiat iusto numquam dolore exercitationem
                 quis labore deserunt.
@@ -46,9 +46,9 @@ const BookTable = () => {
             </div>
             {/* plat */}
             <motion.div
-              initial={{ opacity: 0, x: 60 }}
-              animate={{ opacity: 1, x: [0, 100, 0] }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0}}
+              animate={{ opacity: 1,  }}
+              whileInView={{ opacity: 1,  }}
               transition={{ duration: 2,ease: "easeOut", }}
               // viewport={{ once: true }}
             >

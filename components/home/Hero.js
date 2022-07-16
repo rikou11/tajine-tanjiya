@@ -39,10 +39,10 @@ const Hero = () => {
                         animate={{ opacity: 1 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration:  0.8 ,ease: "easeOut"}}
-                className=" text-6xl lg:text-8xl font-bold mali "
+                className=" text-6xl lg:text-7xl font-bold mali "
               >
                 Taste Now Our Special{" "}
-                <span className="text-green-700 ">Marocain Dishes</span>{" "}
+                <span className="text-green-700 ">Marocain <br /> Dishes</span>{" "}
               </motion.h1>
 
               <div className="flex justify-center lg:justify-start  mt-8">
@@ -56,9 +56,9 @@ const Hero = () => {
             </div>
             {/* plat */}
             <motion.div
-              initial={{ opacity: 0, x: 60 }}
-              animate={{ opacity: 1, x: [0, 100, 0] }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0,  }}
+              animate={{ opacity: 1, }}
+              whileInView={{ opacity: 1, }}
               transition={{ duration: 2, ease: "easeOut" }}
             >
               <Slider {...settings}>

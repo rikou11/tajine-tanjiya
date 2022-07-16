@@ -65,7 +65,7 @@ const Testmonials = () => {
         animate={{ opacity: 1 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="text-center text-6xl text-green-700 lg:text-7xl font-bold my-4 mali mb-10"
+        className="text-center text-4xl text-green-700 lg:text-7xl font-bold my-4 mali mb-10"
       >
         Testemonials
       </motion.h1>

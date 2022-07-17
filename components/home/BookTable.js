@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import styles from "../../styles/Home.module.scss";
+import image from '../../public/images/Group 11 1.svg';
 const BookTable = () => {
   return (
     <div>
@@ -53,7 +53,7 @@ const BookTable = () => {
               // viewport={{ once: true }}
             >
               <Image
-                src="/images/Group 11 1.svg"
+                src={image}
                 alt=""
                 width={700}
                 height={700}

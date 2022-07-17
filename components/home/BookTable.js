@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import image from '../../public/images/Group 11 1.svg';
+import image from "../../public/images/Group 11 1.svg";
 const BookTable = () => {
   return (
     <div>
@@ -16,7 +16,7 @@ const BookTable = () => {
                 className=" text-4xl lg:text-5xl font-bold mali text-center lg:text-left "
               >
                 Do You Have Any Dinner Plan ?
-                <span className="text-transparent text-5xl bg-clip-text bg-gradient-to-tl from-[#E0EBE1] to-green-800  ">
+                <span className="text-transparent text-5xl bg-clip-text bg-green-700  ">
                   Reserve Your Table Now
                 </span>{" "}
               </motion.h1>
@@ -27,7 +27,8 @@ const BookTable = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.9 }}
                 className="text-slate-600 text-center lg:text-left text-lg px-4 lg:px-8"
-              >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatem, eveniet fugiat iusto numquam dolore exercitationem
                 quis labore deserunt.
               </motion.p>
@@ -38,7 +39,10 @@ const BookTable = () => {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.6 }}
                   // viewport={{ once: true }}
-                  className="bg-green-700  shadow-lg shadow-[#D6FDE9] text-yellow-300 hover:bg-green-800 lg:text-xl hover:text-yellow-400 rounded-full px-10 py-3 transition-all duration-300"
+                  onClick={() => {
+                    window.location.href = "#reserve";
+                  }}
+                  className="bg-green-700 border-2 border-yellow-300 shadow-lg shadow-[#D6FDE9] text-yellow-300 hover:bg-green-800 lg:text-xl hover:text-yellow-400 rounded-full px-10 py-3 transition-all duration-300"
                 >
                   Reserve Now
                 </motion.button>
@@ -46,18 +50,13 @@ const BookTable = () => {
             </div>
             {/* plat */}
             <motion.div
-              initial={{ opacity: 0}}
-              animate={{ opacity: 1,  }}
-              whileInView={{ opacity: 1,  }}
-              transition={{ duration: 2,ease: "easeOut", }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 2, ease: "easeOut" }}
               // viewport={{ once: true }}
             >
-              <Image
-                src={image}
-                alt=""
-                width={700}
-                height={700}
-              />
+              <Image src={image} alt="" width={700} height={700} />
             </motion.div>
           </div>
         </div>

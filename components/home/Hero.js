@@ -35,30 +35,29 @@ const Hero = () => {
           <div className="grid grid-cols-1 justify-center gap-10 lg:grid-cols-2">
             <div className="grid grid-cols-1 max-w-2xl  items-center  ">
               <motion.h1
-                        initial={{ opacity: 0, x: -15 }}
-                        animate={{ opacity: 1 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration:  0.8 ,ease: "easeOut"}}
+                initial={{ opacity: 0, x: -15 }}
+                animate={{ opacity: 1 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
                 className=" text-6xl lg:text-7xl font-bold mali "
               >
                 Taste Now Our Special{" "}
-                <span className="text-green-700 ">Marocain <br /> Dishes</span>{" "}
+                <span className="text-green-700 ">
+                  Marocain <br /> Dishes
+                </span>{" "}
               </motion.h1>
 
               <div className="flex justify-center lg:justify-start  mt-8">
-                <button
-              
-                  className="  lg:text-xl shadow-lg shadow-[#D6FDE9] py-3 px-10 text-yellow-400 rounded-[60px]  bg-green-700 hover:bg-green-800  transition-all duration-300"
-                >
+                <button className=" border-2 border-yellow-300 lg:text-xl shadow-lg shadow-[#D6FDE9] py-3 px-10 text-yellow-400 rounded-[60px]  bg-green-700 hover:bg-green-800  transition-all duration-300">
                   View Menu
                 </button>
               </div>
             </div>
             {/* plat */}
             <motion.div
-              initial={{ opacity: 0,  }}
-              animate={{ opacity: 1, }}
-              whileInView={{ opacity: 1, }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
               transition={{ duration: 2, ease: "easeOut" }}
             >
               <Slider {...settings}>

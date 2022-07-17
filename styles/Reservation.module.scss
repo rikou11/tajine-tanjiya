@@ -6,3 +6,12 @@
    background-repeat: no-repeat;
     background-size: cover;   
 }
+
+.hero {
+    background-image: url("/images/motif.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10vh 0 5vh 0;
+  // margin-bottom: 20px;
+    scroll-behavior: smooth;
+  }

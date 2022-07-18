@@ -1,16 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(//db.onlinewebfonts.com/c/c0c7e262b07e8f7d2bd87777a47e362f?family=Iskry+Regular);
+@import url(//db.onlinewebfonts.com/c/757ff6da05e4f945c71c9751b485a9ad?family=Aeonik+Medium);
+@import url(//db.onlinewebfonts.com/c/8f2a9d487bbbc60974cd132fc3a63862?family=Aeonik);
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap"); */
+
+@font-face {
+  font-family: "Iskry Regular";
+  src: url("//db.onlinewebfonts.com/t/c0c7e262b07e8f7d2bd87777a47e362f.eot");
+  src: url("//db.onlinewebfonts.com/t/c0c7e262b07e8f7d2bd87777a47e362f.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/c0c7e262b07e8f7d2bd87777a47e362f.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/c0c7e262b07e8f7d2bd87777a47e362f.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/c0c7e262b07e8f7d2bd87777a47e362f.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/c0c7e262b07e8f7d2bd87777a47e362f.svg#Iskry Regular")
+      format("svg");
+}
+/* @font-face {
+  font-family: "Aeonik Medium";
+  src: url("//db.onlinewebfonts.com/t/757ff6da05e4f945c71c9751b485a9ad.eot");
+  src: url("//db.onlinewebfonts.com/t/757ff6da05e4f945c71c9751b485a9ad.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/757ff6da05e4f945c71c9751b485a9ad.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/757ff6da05e4f945c71c9751b485a9ad.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/757ff6da05e4f945c71c9751b485a9ad.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/757ff6da05e4f945c71c9751b485a9ad.svg#Aeonik Medium")
+      format("svg");
+} */
+@font-face {font-family: "Aeonik"; src: url("//db.onlinewebfonts.com/t/8f2a9d487bbbc60974cd132fc3a63862.eot"); src: url("//db.onlinewebfonts.com/t/8f2a9d487bbbc60974cd132fc3a63862.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8f2a9d487bbbc60974cd132fc3a63862.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8f2a9d487bbbc60974cd132fc3a63862.woff") format("woff"), url("//db.onlinewebfonts.com/t/8f2a9d487bbbc60974cd132fc3a63862.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8f2a9d487bbbc60974cd132fc3a63862.svg#Aeonik") format("svg"); }
+
 html,
 body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth !important;
 
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: "Aeonik", sans-serif;
 }
 
 a {
@@ -26,7 +60,7 @@ a {
   line-height: 90px;
 }
 .mali {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Iskry Regular", sans-serif;
   font-weight: bold;
 }
 .swiper {

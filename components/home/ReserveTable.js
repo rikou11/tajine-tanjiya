@@ -4,7 +4,7 @@ const ReserveTable = () => {
   return (
     <div id="reserve" className="relative h-fit w-full">
       <div className="flex w-full justify-center absolute top-10 ">
-        <h1 className=" text-white   font-extrabold text-3xl lg:text-7xl">
+        <h1 className=" text-white  mali font-extrabold text-3xl lg:text-7xl">
           Reserve Your Table Now
         </h1>
       </div>
@@ -47,9 +47,9 @@ const ReserveTable = () => {
         >
           <div className={`${styles.card} flex flex-col justify-center text-left items-center bg-gray-100 bg-opacity-50 backdrop-blur-sm rounded-[60px] h-96 box-border w-96 `}>
           <div className="flex flex-col gap-2 px-10">
-            <h1 className="font-bold text-5xl text-left text-yellow-300">Hours</h1>
+            <h1 className="font-bold text-5xl text-left mali text-yellow-300">Hours</h1>
             <p  className="text-2xl text-white">8:00 am - 2:00 am</p>
-            <h1 className="font-bold  text-5xl text-left text-yellow-300">Call</h1>
+            <h1 className="font-bold  text-5xl text-left mali text-yellow-300">Call</h1>
             <p  className="text-2xl text-white">Phone (Abu Hail -Dubai) +971 4 2870777</p>
 
           </div>

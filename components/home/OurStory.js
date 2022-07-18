@@ -41,7 +41,7 @@ const OurStory = () => {
           </svg>
         </motion.div>
 
-        <motion.div className="grid grid-cols-1 mx-4 lg:grid-cols-2 text-green-900 text-left text-base lg:text-xl gap-10">
+        <motion.div className="grid grid-cols-1 mx-4 lg:grid-cols-2 text-gray-500 text-left text-base lg:text-xl gap-10">
           <motion.p
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1 }}

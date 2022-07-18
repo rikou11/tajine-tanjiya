@@ -36,8 +36,8 @@ const ReserveTable = () => {
               className="border-b-2 border-white  box-border  pl-2 bg-transparent focus:border-b-2 focus:outline-none text-2xl w-[300px] lg:w-[600px] pt-5 px-10 placeholder:text-slate-400 text-white  focus:border-yellow-400"
             />
             <div className="flex justify-center lg:justify-start  my-8">
-              <button className="  lg:text-xl shadow-lg border-2 border-yellow-300  py-3 px-10 text-yellow-400 rounded-[60px]  bg-green-800 hover:bg-green-900  transition-all duration-300">
-                View Menu
+              <button className=" mali lg:text-xl shadow-lg border-2 border-yellow-300  py-3 px-10 text-yellow-400 rounded-[60px]  bg-green-800 hover:bg-green-900  transition-all duration-300">
+                Submit
               </button>
             </div>
           </div>

@@ -42,7 +42,7 @@ const BookTable = () => {
                   onClick={() => {
                     window.location.href = "#reserve";
                   }}
-                  className="bg-green-700 border-2 border-yellow-300 shadow-lg shadow-[#D6FDE9] text-yellow-300 hover:bg-green-800 lg:text-xl hover:text-yellow-400 rounded-full px-10 py-3 transition-all duration-300"
+                  className="bg-green-700 mali border-2 border-yellow-300 shadow-lg shadow-[#D6FDE9] text-yellow-300 hover:bg-green-800 lg:text-xl hover:text-yellow-400 rounded-full px-10 py-3 transition-all duration-300"
                 >
                   Reserve Now
                 </motion.button>

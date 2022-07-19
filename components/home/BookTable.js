@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import image from "../../public/images/Group 11 1.svg";
+import image from "../../public/images/reserve plate.png";
 const BookTable = () => {
   return (
     <div>
@@ -26,7 +26,7 @@ const BookTable = () => {
                 animate={{ opacity: 1 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.9 }}
-                className="text-slate-600 text-center lg:text-left text-lg px-4 lg:px-8"
+                className="text-slate-600 text-center lg:text-left text-lg px-2 "
               >
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatem, eveniet fugiat iusto numquam dolore exercitationem

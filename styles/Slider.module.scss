@@ -45,17 +45,17 @@
   }
 
   .slickArrowIconLeft {
-    left: -30px;
+    left: -20px;
     [dir="rtl"] & {
       left: auto;
-      right: -30px;
+      right: -20px;
     }
   }
 
   .slickArrowIconRight {
-    right: -30px;
+    right: -20px;
     [dir="rtl"] & {
-      left: -30px;
+      left: -20px;
       right: auto;
     }
   }

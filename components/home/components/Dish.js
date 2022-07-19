@@ -25,12 +25,12 @@ const Dish = ({ dish }) => {
       <div className="flex justify-between items-center ">
         <h1 className="text-base lg:text-lg font-bold text-left mali ">{dish.name}</h1>
         {dish.new ? (
-          <p className="text-base bg-[#E0EBE1] text-green-700 p-2 rounded-full text-left  ">
+          <p className="text-sm bg-[#E0EBE1] text-green-700 p-2 rounded-full text-left  ">
             <FontAwesomeIcon icon={faStar} />
             New
           </p>
         ) : (
-          <p className="text-base bg-red-300 text-red-700 p-2 rounded-full text-left  ">
+          <p className="text-sm bg-red-300 text-red-700 p-2 rounded-full text-center  ">
           <FontAwesomeIcon icon={faStar} />
           Top Rated
         </p>

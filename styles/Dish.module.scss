@@ -1,0 +1,37 @@
+
+.Image{
+
+    border-radius: 1rem;
+}
+.heart{
+    position:absolute;
+
+    top:8%;
+    height: 8%;
+    right:8%;
+    transition: all 0.3s;
+    &:hover{
+        color: rgb(255, 0, 0);
+        
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .dishConatiner{
+        height: 100%; ;
+        width: 100%;
+        max-width: 165px;
+        position: relative;
+    }    
+    
+}
+@media screen and (min-width: 769px) {
+    .dishConatiner{
+        height: 100%; ;
+        width: 100%;
+        max-width: 400px;
+        position: relative;
+    }    
+    
+}

@@ -6,7 +6,11 @@ import styles from "../../../styles/Dish.module.scss";
 import { motion } from "framer-motion";
 const Dish = ({ dish }) => {
   return (
-    <motion.div    layout
+    <motion.div         initial={{ opacity: 0, x: -15,y:0 }}
+    animate={{ opacity: 1 }}
+    whileInView={{ opacity: 1, x: 0,y:0 }}
+    transition={{ duration: 0.6, ease: "easeOut" }}  
+    exit={{opacity:0 , x:0,y:0}}   layout
   className={styles.dishConatiner}>
       <Image
         src={dish.image}
@@ -21,12 +25,15 @@ const Dish = ({ dish }) => {
       <div className="flex justify-between items-center ">
         <h1 className="text-base lg:text-lg font-bold text-left mali ">{dish.name}</h1>
         {dish.new ? (
-          <p className="text-lg text-left ">
+          <p className="text-base bg-[#E0EBE1] text-green-700 p-2 rounded-full text-left  ">
             <FontAwesomeIcon icon={faStar} />
             New
           </p>
         ) : (
+          <p className="text-base bg-red-300 text-red-700 p-2 rounded-full text-left  ">
           <FontAwesomeIcon icon={faStar} />
+          Top Rated
+        </p>
         )}
       </div>
       <p className="text-sm   lg:text-base  text-gray-500 text-left ">{dish.category_name}</p>

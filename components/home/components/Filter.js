@@ -11,6 +11,7 @@ const Filter = ({ popular, setFiltred, setActiveGenre, activeGenre }) => {
       return dish.category.includes(activeGenre);
     });
     setFiltred(filtred);
+    console.log('hello');
   }, [activeGenre]);
   return (
     <div className="flex flex-wrap gap-5 justify-center items-center py-4">

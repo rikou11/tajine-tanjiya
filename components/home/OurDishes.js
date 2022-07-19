@@ -2,7 +2,7 @@ import { useState } from "react";
 import Dish from "./components/Dish";
 import Filter from "./components/Filter";
 import { dishes } from "./Content/Dishes";
-import {motion} from 'framer-motion'
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "../../styles/Home.module.scss";
 
 const OurDishes = () => {
@@ -11,8 +11,7 @@ const OurDishes = () => {
   const [activeGenre, setActiveGenre] = useState(9);
   return (
     <div className=" flex flex-col justify-center">
-  <div className={styles.section}>
-      
+      <div className={styles.section}>
         <motion.h1
           initial={{ opacity: 0, y: -15 }}
           animate={{ opacity: 1 }}
@@ -23,31 +22,29 @@ const OurDishes = () => {
           We Cook Our Food With Love
         </motion.h1>
 
+        <Filter
+          popular={popular}
+          setFiltred={setFiltred}
+          activeGenre={activeGenre}
+          setActiveGenre={setActiveGenre}
+        />
 
-      <Filter
-        popular={popular}
-        setFiltred={setFiltred}
-        activeGenre={activeGenre}
-        setActiveGenre={setActiveGenre}
-      />
-
-      <motion.div layout className="flex flex-row  flex-wrap justify-center content-center gap-x-8 gap-y-4">
-
-      {filltred.map((dish) => {
-        return (
-          <motion.div    
-                 initial={{ opacity: 0, x: -15 }}
-          animate={{ opacity: 1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.4, ease: "easeOut" }}   layout key={dish.id}>
-            <Dish dish={dish} />
-          </motion.div>
-        );
-      })}
-      </motion.div>
+        <motion.div
+          layout
+          className="flex flex-row  flex-wrap justify-center content-center gap-x-8 gap-y-4"
+        >
+          <AnimatePresence>
+            {filltred.map((dish) => {
+              return (
+                <motion.div layout key={dish.id}>
+                  <Dish dish={dish} />
+                </motion.div>
+              );
+            })}
+          </AnimatePresence>
+        </motion.div>
+      </div>
     </div>
-    </div>
-
   );
 };
 

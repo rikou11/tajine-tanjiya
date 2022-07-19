@@ -1,3 +1,11 @@
+
+// 0 : for all
+// 9  : for popular
+// 10 : for  tagine
+// 20 sweets
+//40 : latest dishes
+
+
 export const dishes = [
   {
     id: 1,
@@ -5,7 +13,7 @@ export const dishes = [
     image: "https://foodish-api.herokuapp.com/images/dosa/dosa43.jpg",
 
     category: [0, 9,10,40],
-    category_name: "category",
+    category_name: "Tagine",
     new: true,
   },
   {
@@ -14,17 +22,17 @@ export const dishes = [
     image: "https://foodish-api.herokuapp.com/images/idly/idly51.jpg",
 
     category: [0, 9, 10,40],
-    category_name: "category",
-    new: false,
+    category_name: "Tagine",
+    new: true,
   },
   {
     id: 5,
     name: "Rfissa",
     image: "https://foodish-api.herokuapp.com/images/dosa/dosa20.jpg",
-    category_name: "category",
+    category_name: "Tagine",
     category: [0, 10],
 
-    new: true,
+    new: false,
   },
   {
     id: 0,
@@ -32,7 +40,7 @@ export const dishes = [
     image: "https://foodish-api.herokuapp.com/images/butter-chicken/butter-chicken1.jpg",
 
     category: [0, 20],
-
+category_name: "Sweets",
     new: false,
   },
 
@@ -42,7 +50,7 @@ export const dishes = [
     image: "https://foodish-api.herokuapp.com/images/pasta/pasta28.jpg",
 
     category: [0, 20,40],
-
+category_name: "Sweets",
     new: true,
   },
   {
@@ -51,8 +59,8 @@ export const dishes = [
     image: "https://foodish-api.herokuapp.com/images/rice/rice28.jpg",
 
     category: [0, 20,40],
-    category_name: "category",
-    new: false,
+    category_name: "Sweets",
+    new: true,
   },
 
   {
@@ -61,8 +69,8 @@ export const dishes = [
     image: "https://foodish-api.herokuapp.com/images/idly/idly14.jpg",
 
     category: [0, 9, 20,40],
-    category_name: "category",
-    new: false,
+    category_name: "Sweets",
+    new: true,
   },
   {
     id: 7,
@@ -70,14 +78,14 @@ export const dishes = [
     image: "https://foodish-api.herokuapp.com/images/idly/idly34.jpg",
 
     category: [0, 10],
-    category_name: "category",
+    category_name: "tagine",
     new: false,
   },
   {
     id: 8,
     name: "Tagine lhout",
     image: "https://foodish-api.herokuapp.com/images/idly/idly3.jpg",
-    category_name: "category",
+    category_name: "Sea Food",
     category: [0, 10],
 
     new: false,

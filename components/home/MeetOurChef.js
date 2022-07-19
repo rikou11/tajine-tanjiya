@@ -62,7 +62,7 @@ const MeetOurChef = () => {
           {chef.map((i,index) => {
             return (
               <div className="flex flex-col justify-center bg-white box-border h-80 w-64 pb-10  hover:scale-110   rounded-lg border border-[#2563323a] hover:border-0 hover:shadow-lg hover:shadow-[#2563323a] transition-all duration-200"  key={index}>
-             
+
            <div className="flex justify-center">
                  <Image src={i.image} alt={i.name} width={200} height={200} />
 

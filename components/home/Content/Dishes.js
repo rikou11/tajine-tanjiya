@@ -10,7 +10,7 @@ export const dishes = [
   {
     id: 1,
     name: "Couscous",
-    image: "https://foodish-api.herokuapp.com/images/dosa/dosa43.jpg",
+    image: "https://foodish-api.herokuapp.com/images/butter-chicken/butter-chicken16.jpg",
 
     category: [0, 9,10,40],
     category_name: "Tagine",
@@ -19,7 +19,7 @@ export const dishes = [
   {
     id: 2,
     name: "Harira",
-    image: "https://foodish-api.herokuapp.com/images/idly/idly51.jpg",
+    image: "https://foodish-api.herokuapp.com/images/biryani/biryani2.jpg",
 
     category: [0, 9, 10,40],
     category_name: "Tagine",
@@ -28,7 +28,7 @@ export const dishes = [
   {
     id: 5,
     name: "Rfissa",
-    image: "https://foodish-api.herokuapp.com/images/dosa/dosa20.jpg",
+    image: "https://foodish-api.herokuapp.com/images/butter-chicken/butter-chicken17.jpg",
     category_name: "Tagine",
     category: [0, 10],
 
@@ -66,7 +66,7 @@ category_name: "Sweets",
   {
     id: 6,
     name: "Maqrot",
-    image: "https://foodish-api.herokuapp.com/images/idly/idly14.jpg",
+    image: "https://foodish-api.herokuapp.com/images/biryani/biryani54.jpg",
 
     category: [0, 9, 20,40],
     category_name: "Sweets",
@@ -75,7 +75,7 @@ category_name: "Sweets",
   {
     id: 7,
     name: "Chicken Tagine",
-    image: "https://foodish-api.herokuapp.com/images/idly/idly34.jpg",
+    image: "https://foodish-api.herokuapp.com/images/biryani/biryani3.jpg",
 
     category: [0, 10],
     category_name: "tagine",
@@ -84,7 +84,7 @@ category_name: "Sweets",
   {
     id: 8,
     name: "Tagine lhout",
-    image: "https://foodish-api.herokuapp.com/images/idly/idly3.jpg",
+    image: "https://foodish-api.herokuapp.com/images/biryani/biryani4.jpg",
     category_name: "Sea Food",
     category: [0, 10],
 

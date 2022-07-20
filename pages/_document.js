@@ -11,17 +11,17 @@ class MyDocument extends Document {
           
           <link
             href="//db.onlinewebfonts.com/c/c0c7e262b07e8f7d2bd87777a47e362f?family=Iskry+Regular"
-            rel="stylesheet"
-            type="text/css"
+      
+            rel="preload"
           />
           <link
             href="//db.onlinewebfonts.com/c/8f2a9d487bbbc60974cd132fc3a63862?family=Aeonik"
-            rel="stylesheet"
-            type="text/css"
+            rel="preload"
           />{" "}
           <link
             href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-            rel="stylesheet"
+     
+            rel="preload"
           />
         </Head>
         <body>

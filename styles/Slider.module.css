@@ -1,0 +1,131 @@
+@media screen and (min-width: 1024px) {
+  .Slider {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .cardSlider {
+    padding: 20px 30px;
+    height: 620px;
+  }
+  .card {
+    padding: 20px;
+  }
+  .slickArrowIconRight,
+.slickArrowIconLeft {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    color: rgb(1, 122, 17);
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    transition: 0.5s ease-in-out;
+  }
+  .slickArrowIconRight:hover, .slickArrowIconRight:focus,
+.slickArrowIconLeft:hover,
+.slickArrowIconLeft:focus {
+    outline: none;
+    background: transparent;
+    color: rgb(1, 122, 17);
+    font-size: 40px;
+  }
+  .slickArrowIconRight:hover::before, .slickArrowIconRight:focus::before,
+.slickArrowIconLeft:hover::before,
+.slickArrowIconLeft:focus::before {
+    opacity: 1;
+  }
+  .slickArrowIconLeft {
+    left: -20px;
+  }
+  [dir=rtl] .slickArrowIconLeft {
+    left: auto;
+    right: -20px;
+  }
+  .slickArrowIconRight {
+    right: -20px;
+  }
+  [dir=rtl] .slickArrowIconRight {
+    left: -20px;
+    right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .Slider {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .cardSlider {
+    padding: 20px 30px;
+    height: 290px;
+  }
+  .card {
+    padding: 20px;
+  }
+  .slickArrowIconRight,
+.slickArrowIconLeft {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    color: rgb(1, 122, 17);
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    transition: 0.5s ease-in-out;
+  }
+  .slickArrowIconRight:hover, .slickArrowIconRight:focus,
+.slickArrowIconLeft:hover,
+.slickArrowIconLeft:focus {
+    outline: none;
+    background: transparent;
+    color: rgb(1, 122, 17);
+    font-size: 40px;
+  }
+  .slickArrowIconRight:hover::before, .slickArrowIconRight:focus::before,
+.slickArrowIconLeft:hover::before,
+.slickArrowIconLeft:focus::before {
+    opacity: 1;
+  }
+  .slickArrowIconLeft {
+    left: -30px;
+  }
+  [dir=rtl] .slickArrowIconLeft {
+    left: auto;
+    right: -30px;
+  }
+  .slickArrowIconRight {
+    right: -30px;
+  }
+  [dir=rtl] .slickArrowIconRight {
+    left: -30px;
+    right: auto;
+  }
+}
+@media screen and (max-width: 760px) {
+  .Slider {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .cardSlider {
+    padding: 20px 30px;
+    height: 270px;
+  }
+  .card {
+    position: relative;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+  }
+  .slickArrowIconRight,
+.slickArrowIconLeft {
+    display: none;
+  }
+}/*# sourceMappingURL=Slider.module.css.map */

@@ -1,0 +1,31 @@
+@tailwind components;
+@layer components {
+  .div {
+    @apply bg-green-800;
+  }
+  .header {
+    @apply text-yellow-300 flex items-center justify-between max-w-6xl mx-auto h-[80px];
+    padding: 0 2rem;
+  }
+  .header nav span {
+    @apply mx-8 my-0;
+  }
+  .header nav span:hover {
+    @apply text-yellow-500;
+  }
+  .navBtn {
+    @apply cursor-pointer bg-white p-1.5   text-xl   hidden   opacity-0;
+  }
+  @media only screen and (max-width: 768px) {
+    .nav {
+      @apply fixed top-0 left-0  z-50 right-0 h-full w-full flex justify-center flex-col  items-center gap-6 bg-green-800 transition-all duration-500 ease-in-out;
+      transform: translateY(-100vh);
+    }
+    .navBtn {
+      @apply cursor-pointer bg-transparent p-1.5 outline-none border-none text-yellow-300 block opacity-100 text-xl;
+    }
+    .showNav {
+      transform: none;
+    }
+  }
+}/*# sourceMappingURL=nav.module.css.map */

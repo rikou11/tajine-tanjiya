@@ -1,0 +1,15 @@
+.reservation {
+  background-image: url("/images/resrve.png");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero {
+  background-image: url("/images/motif.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10vh 0 5vh 0;
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=Reservation.module.css.map */

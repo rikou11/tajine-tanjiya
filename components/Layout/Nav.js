@@ -13,32 +13,40 @@ const Nav = () => {
   return (
     <div className={styles.div}>
       <header className={styles.header}>
-        <Image
-          alt="Tajine and Tanjiya"
-          src="/logo.svg"
-          className="relative "
-          width={100}
-          height={100}
-        />
+        <Link href={"/"} passHref>
+          <a>
+            <Image
+              alt="Tajine and Tanjiya"
+              src="/logo.svg"
+              className="relative cursor-pointer "
+              width={100}
+              height={100}
+            />
+          </a>
+        </Link>
+
         <nav className={styles.nav} ref={navRef}>
-          <span>
-            <Link href="/">Home</Link>
+          <span onClick={showNav}>
+            <Link href={"/"}>Home</Link>
           </span>
-          <span>
-            <Link href="/about">About</Link>
+          <span onClick={showNav}>
+            <Link href={"/about"}>About</Link>
           </span>
-          <span>
-            <Link href="/menu">Menu</Link>
+          <span onClick={showNav}>
+            <Link href={"/menu"}>Menu</Link>
           </span>
-          <span>
-            <Link href="/Join-us">Join Us</Link>
+          <span onClick={showNav}>
+            <Link href={"/Join-us"}>Join Us</Link>
           </span>
 
           <button
             className={`${styles.navBtn} ${styles.navColse}`}
             onClick={showNav}
           >
-            <FontAwesomeIcon icon={faTimes} className="text-yellow-300 text-4xl"  />
+            <FontAwesomeIcon
+              icon={faTimes}
+              className="text-yellow-300 text-4xl"
+            />
           </button>
         </nav>
         <button className={styles.navBtn} onClick={showNav}>

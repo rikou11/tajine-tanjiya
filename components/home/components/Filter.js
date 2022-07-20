@@ -15,7 +15,7 @@ const Filter = ({ popular, setFiltred, setActiveGenre, activeGenre }) => {
   }, [activeGenre]);
   return (
     <div className="flex flex-wrap gap-5 justify-center items-center py-4">
-      <buttton
+      <button
         onClick={() => {
           setActiveGenre(9);
         }}
@@ -26,9 +26,9 @@ const Filter = ({ popular, setFiltred, setActiveGenre, activeGenre }) => {
         }
       >
         Popular
-      </buttton>
+      </button>
      
-      <buttton
+      <button
         onClick={() => {
           setActiveGenre(40);
         }}
@@ -39,8 +39,8 @@ const Filter = ({ popular, setFiltred, setActiveGenre, activeGenre }) => {
         }
       >
         Latest
-      </buttton>
-      <buttton
+      </button>
+      <button
         onClick={() => {
           setActiveGenre(10);
         }}
@@ -51,8 +51,8 @@ const Filter = ({ popular, setFiltred, setActiveGenre, activeGenre }) => {
         }
       >
         Tagine
-      </buttton>
-      <buttton
+      </button>
+      <button
         onClick={() => {
           setActiveGenre(20);
         }}
@@ -63,7 +63,7 @@ const Filter = ({ popular, setFiltred, setActiveGenre, activeGenre }) => {
         }
       >
         sweets
-      </buttton>
+      </button>
     </div>
   );
 };

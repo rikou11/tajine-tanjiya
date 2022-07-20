@@ -5,10 +5,7 @@ import { motion } from "framer-motion";
 const Story = () => {
   return (
     <div className={styles.hero}>
-      <div className=" flex flex-col-reverse  lg:grid  lg:grid-cols-2 gap-10 py-10 px-2 lg:px-20">
-        <div className="flex justify-center h-[600px]">
-          <Image src="/story.jpg" alt="plat4" width={400} height={400} />
-        </div>{" "}
+      <div className=" flex flex-col  lg:grid  lg:grid-cols-2 gap-10 py-10 px-2 lg:px-20">
         <div className=" ">
           <motion.h1
             initial={{ opacity: 0, y: -15 }}
@@ -26,7 +23,7 @@ const Story = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className=" text-3xl lg:text-5xl  font-bold mali text-green-800 pb-5"
           >
-            About Tajine&Tanjiya
+            About Tajine wa Tanjiya
           </motion.h1>
           <motion.h1
             initial={{ opacity: 0, y: -15 }}
@@ -56,7 +53,7 @@ const Story = () => {
             safety standard as recommended by the local authority. <br />
             Our guests are going to be treated with good music at all times.{" "}
             <br />
-            <div className="flex flex-row flex-wrap gap-5 mt-8">
+            <div className="flex flex-row flex-wrap gap-2  lg:gap-5 mt-8">
               <div className="flex flex-row gap-2 items-center hover:opacity-80 bg-[#E0EBE1] py-2 px-2 rounded-lg">
                 <svg
                   className="h-10 w-10 "
@@ -191,7 +188,10 @@ const Story = () => {
               </div>
             </div>
           </motion.div>
-        </div>
+        </div>{" "}
+        <div className="flex justify-center h-[600px]">
+          <Image src="/story.jpg" alt="plat4" width={400} height={400} className='rounded-lg' />
+        </div>{" "}
       </div>
     </div>
   );

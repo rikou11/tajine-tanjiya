@@ -25,20 +25,20 @@ const Nav = () => {
             <Link href="/">Home</Link>
           </span>
           <span>
-            <Link href="/">About</Link>
+            <Link href="/about">About</Link>
           </span>
           <span>
-            <Link href="/">Menu</Link>
+            <Link href="/menu">Menu</Link>
           </span>
           <span>
-            <Link href="/">Join Us</Link>
+            <Link href="/Join-us">Join Us</Link>
           </span>
 
           <button
             className={`${styles.navBtn} ${styles.navColse}`}
             onClick={showNav}
           >
-            <FontAwesomeIcon icon={faTimes}className="text-yellow-300 text-2xl"  />
+            <FontAwesomeIcon icon={faTimes} className="text-yellow-300 text-4xl"  />
           </button>
         </nav>
         <button className={styles.navBtn} onClick={showNav}>

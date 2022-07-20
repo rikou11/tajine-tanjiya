@@ -18,8 +18,11 @@
   }
   @media only screen and (max-width: 768px) {
     .nav {
-      @apply fixed top-0 left-0  z-50 right-0 h-full w-full flex justify-center flex-col  items-center gap-6 bg-green-800 transition-all duration-500 ease-in-out;
+      @apply fixed top-0 left-0   z-50 right-0 h-full w-full flex justify-center flex-col  items-center gap-6 bg-green-800 transition-all duration-500 ease-in-out;
       transform: translateY(-100vh);
+    }
+    .nav span {
+      @apply text-4xl;
     }
     .navBtn {
       @apply cursor-pointer bg-transparent p-1.5 outline-none border-none text-yellow-300 block opacity-100 text-xl;
@@ -28,4 +31,4 @@
       transform: none;
     }
   }
-}/*# sourceMappingURL=nav.module.css.map */
+}/*# sourceMappingURL=Nav.module.css.map */
